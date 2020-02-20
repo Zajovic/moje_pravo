@@ -1,7 +1,7 @@
 
 # Responsive Layout Design
 
-This repository hold an website who demonstrating layout responsive design. Adopting many of the industry best practices with a mobile first approach.
+This repository holds a website which demonstrates responsive design. It contains many of the industry best practices for a mobile first approach.
 
 The site is live and you can check it out here.
 
