@@ -10,7 +10,7 @@ Link - www.obradakredita.rs
 
 ##Key Highlights: 
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - Mobile First Design
+*- Mobile First Design
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - SASS 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - BEM-metodology
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - Flexbox based fluid layouts
