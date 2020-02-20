@@ -17,4 +17,5 @@ Link - www.obradakredita.rs
 * Jquery
 
 This site has been cross tested in Chrome, FireFox, Safari and Internet Explorer.
+
 Mostly, everything should work fine ;)
