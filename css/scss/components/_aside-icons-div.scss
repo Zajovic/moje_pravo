@@ -1,0 +1,32 @@
+
+//  Aside media box
+.aside-icons {
+    position: fixed;
+    bottom: 3rem;
+    right: 10px;
+    height: auto;
+    width: auto;
+    background-color: $transparent-golden-color;
+    border-radius: $default-border-radius;
+    z-index: 0;
+    padding: 5px;
+    @include column-order;
+    .aside-icons_fb-link {
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin-bottom: 5px;
+        & {
+            @media only screen and(max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+}
+
+//  Aside Icons(img)
+.aside-icons_img {
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}

@@ -1,0 +1,138 @@
+//  ARTICLE BASIC ELEMENTS
+
+//  Plain text style
+.text-article_content {
+    font-size: $default-font-size;
+    padding: $min-padding;
+    text-align: justify;
+    color: rgb(72, 79, 83);
+    word-spacing: $default-word-spacing;
+    letter-spacing: $default-letter-spacing;
+}
+.text-article_subtitle-h1 {
+    font-size: $large-font-size;
+    font-weight: 400;
+    word-spacing: $default-word-spacing;
+    letter-spacing: $default-letter-spacing;
+    padding: 0 5%;
+    margin-top: 30px;
+    color: rgb(72, 79, 83);
+    display: block;
+    width: 100%;
+    text-align: center;
+    & {
+        @media only screen and(min-width: 930px) {
+            font-size: 2rem;
+        }
+    }
+}
+.text-article_subtitle-h2 {
+    font-size: $larger-font-size;
+    font-weight: 400;
+    word-spacing: $default-word-spacing;
+    letter-spacing: $default-letter-spacing;
+    padding: 0 5%;
+    color: rgb(72, 79, 83);
+}
+.text-article_important {
+    font-size: $default-font-size;
+    font-weight: 500;
+    color: rgb(72, 79, 83);
+    padding: $min-padding;
+    text-decoration: underline $golden-color;
+}
+.text-article_hyperlink {
+    text-decoration: none;
+    color: $golden-color;
+    display: block;
+    margin-top: 10px;
+}
+
+//  List style
+.text-article_ul {
+    list-style: none;
+    color: $dark-color;
+}
+.text-article_li {
+    padding: 0;
+    font-size: $default-font-size;
+    color: rgb(72, 79, 83);
+    &::before {
+        content: "\25E6";
+        display: inline-block;
+        font-size: 25px;
+        color: $dark-color;
+        display: inline-block;
+        width: 1.5rem;
+        margin-left: 1rem;
+    }   
+}
+
+//  Wrapper for text content
+.text-article_index-wrapper {
+    & {
+        @media only screen and(min-width: 930px) {
+            margin: auto;
+            width: 65%;
+            padding: 70px 0;
+            .text-article_content, .text-article_li {
+                font-size: $larger-font-size;
+            }
+            .text-article_subtitle-h2 {
+                font-size: 1.7rem;
+                text-align: center;
+            }
+            .text-article_important {
+                font-size: $larger-font-size;
+                display: block;
+            }
+        }
+    }
+}
+//  Tuzbe page text wrapper
+.text-article_tuzbe-wrapper {
+    & {
+        @media only screen and(min-width: 930px) {
+            margin: auto;
+            width: 65%;
+            padding: 0 0;
+            .text-article_subtitle-h2 {
+                font-size: 1.7rem;
+                text-align: left;
+                display: block;
+            }
+        }
+    }
+}
+
+// Gauzy background articles
+.text-article--gauzy { 
+    background-color: $transparent-light-color;
+    .text-article_subtitle-h2 {
+        padding-top: 30px;
+    }
+    .text-article_content--more {
+        display: none;
+        & {
+            @media only screen and(min-width: 930px) {
+                display: flex;
+                @include column-order;
+            }
+        }
+    }
+}
+
+//  Material Icons
+.m-i-style {
+    margin-left: -180px;
+    color: $dark-blue-color;
+    line-height: $larger-font-size;
+    & {
+        @media only screen and (min-width: 600px) {
+            font-size: 27px;
+        }
+        @media only screen and(min-width: 930px){
+            display: none;
+        }
+    }
+}

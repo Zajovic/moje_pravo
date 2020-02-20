@@ -1,0 +1,42 @@
+
+//  Default margin and padding
+@mixin default-p-m {
+    margin: 0;
+    padding: 0;
+}
+
+//  Default width and height
+@mixin default-w-h {
+    width: 100%;
+    height: auto;
+}
+
+//  Flexbox content order
+@mixin column-order {
+    display: flex;
+    flex-flow: column nowrap;
+}
+@mixin row-order {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+// Box shadow vendors  
+@mixin nav-shadow(){
+    -webkit-box-shadow: $nav-shadow;
+    -moz-box-shadow: $nav-shadow;
+    -ms-box-shadow: $nav-shadow;
+    box-shadow: $nav-shadow;
+}
+@mixin form-shadow() {
+    -webkit-box-shadow: $form-shadow;
+    -moz-box-shadow: $form-shadow;
+    -ms-box-shadow: $form-shadow;
+    box-shadow: $form-shadow; 
+}
+@mixin modal-shadow() {
+-webkit-box-shadow: $modal-shadow;
+-moz-box-shadow: $modal-shadow;
+-ms-box-shadow: $modal-shadow;
+box-shadow: $modal-shadow;
+}

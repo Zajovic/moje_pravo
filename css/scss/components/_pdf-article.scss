@@ -1,0 +1,43 @@
+.text-article--gauzy {
+    &:nth-child(2) {
+        @include default-p-m;
+        .text-article_index-wrapper {
+            padding: 0;
+            .text-article_subtitle-h1 {
+                @include default-p-m;
+            }
+        }  
+    }
+    &:last-child {
+        .text-article_pdf-wrapper {
+            & {
+                @media only screen and(min-width: 930px) {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    .text-article_pdf-wrapper {
+        @include default-w-h;
+        @include column-order;
+        justify-content: center;
+        align-items: center;
+        & {
+            @media only screen and(min-width: 930px){
+                @include row-order;
+            }
+        } 
+        embed {
+            height: 350px;
+            width: 100%;
+            margin-top: 20px;
+            & {
+                @media only screen and(min-width: 930px){
+                    margin: 20px 15px 0 15px;
+                    width: 40%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}

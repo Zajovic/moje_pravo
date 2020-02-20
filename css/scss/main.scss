@@ -1,0 +1,26 @@
+// Google font
+@import url('https://fonts.googleapis.com/css?family=Cardo|Cormorant+Garamond&display=swap');
+
+//  Mixins
+@import "helpers/mixins";
+
+// Variables
+@import "helpers/variables";
+
+//  Pages
+@import "pages/index";
+
+//  Components
+@import "components/aside-icons-div";
+@import "components/footer";
+@import "components/menu-button&logo";
+@import "components/modal";
+@import "components/menu";
+@import "components/contact-info-card";
+@import "components/mail-form";
+@import "components/carousel";
+@import "components/transparent-article";
+@import "components/_pdf-article.scss";
+
+//Layout elements
+@import "layouts/elements";

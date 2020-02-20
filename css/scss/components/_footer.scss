@@ -1,0 +1,71 @@
+.footer-large-screen {
+    @include default-w-h;
+    display: none;
+    padding-bottom: 1rem;
+    & {
+       @media only screen and (min-width: 930px) {
+           .footer_div {
+               flex: 1;
+               @include column-order;
+               justify-content: center;
+               align-items: center;
+               a {
+                   text-decoration: none;
+                   cursor: pointer;
+               }
+            .footer_img--logo {
+                @include default-w-h;
+            }
+            .footer_img--calculator {
+                width: 40%;
+                max-width: 130px;
+                height: auto;
+            }
+            .footer_p {
+                @include default-p-m;
+                display: block;
+                width: 100%;
+                text-align: right;
+                color: $light-color;
+                padding: 2% 15%;
+                letter-spacing: $default-letter-spacing;
+                &:last-child{
+                    text-decoration: underline $golden-color;
+                }
+            }
+           }
+            @include row-order;
+        }
+    }
+}
+.footer_div--copyright {
+    p {
+        font-size: 3.5vw;
+        color: $golden-color;
+        & {
+            @media only screen and (min-width: 350px) {
+                font-size: 0.85rem;
+                letter-spacing: $default-letter-spacing;
+            }
+        }
+    }
+}
+
+//  Transparent footer
+.footer--gauzy {
+    background-color: $transparent-light-color!important;
+    & {
+        @media only screen and(min-width:930px) {
+            background-color: $dark-blue-color!important;
+        }
+    }
+}
+
+//  Single h1 element(Calculator)
+.footer_h1 {
+    font-size: $larger-font-size;
+    color: $light-color;
+    font-weight: 400;
+    letter-spacing: $default-letter-spacing;
+    text-decoration: underline $golden-color;
+}

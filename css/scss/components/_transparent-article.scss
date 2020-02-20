@@ -1,0 +1,26 @@
+
+//   transparent article
+.text-article--transparent {
+    background-color: transparent;
+    .text-article-box {
+        margin: 5px 5%;
+        text-align: center;
+        background-color: $transparent-silver-color;
+        &:first-child {
+            margin-top: 30px;
+        }
+        &:last-child {
+            margin-bottom: 50px;
+        }
+        .text-article_content--silver-box {
+            text-align: center;
+            word-spacing: 0;
+            margin: 0 0;
+        }
+        & {
+            @media only screen and(min-width: 1024px) {
+                display: none;
+            }
+        } 
+    }
+}

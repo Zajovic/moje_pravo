@@ -1,0 +1,31 @@
+
+// First article on index page - Large screen(Slick Slider)
+.carousel-container{
+    display: none;
+    & {
+        @media only screen and (min-width: 1024px){
+            @include row-order;
+            width: 55%;
+            min-width: 700px;
+            height: auto;
+            margin: 180px 0 10% 8%;
+            div {
+                background-color: rgba(190, 190, 190, 0.3);
+                height: 100%;
+                img {
+                    margin: 8% auto 5% auto;
+                    height: 200px;
+                    width: auto;
+
+                }
+                p {
+                    @include default-w-h;
+                    @include default-p-m;
+                    text-align: center;
+                    font-size: $large-font-size;
+                    padding-bottom: 5%;
+                }
+            }
+        }
+    }
+}

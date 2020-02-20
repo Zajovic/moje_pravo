@@ -1,0 +1,30 @@
+
+
+//  Menu(hamburger) icon
+.hamburger-icon-div {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    padding-right: 10px;
+    @include row-order;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    & {
+        @media only screen and(min-width: 930px) {
+            display: none;
+        }
+    }
+}
+
+//  Nav-bar logo
+.logo-div {
+    height: 100%;
+    width: auto;
+}
+.logo-div_img {
+    height: 100%;
+    width: auto;
+    margin-left: 1%;
+    cursor: pointer;
+}

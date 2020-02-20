@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: "Cardo", "Cormorant Garamond", sans-serif;
+}
+
+body {
+    //background-color: $background-color;
+    background-image: url("../../../images/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include default-w-h;
+    min-width: 200px;
+    @include default-p-m;
+    @include column-order;
+    main {
+        @include column-order;
+        @include default-w-h;
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: $golden-color;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            @include row-order;
+            @include nav-shadow;
+            justify-content: space-between;
+            & {
+                @media only screen and(min-width: 930px) {
+                    height: 80px;
+                }
+            }
+        }
+        section {
+            display: flex;
+            flex-flow: column nowrap;
+            @include default-w-h;
+            & .slider-article {
+                background-color: transparent;
+            }
+            article {
+                background-color: $light-color;
+                @include default-w-h;
+                @include column-order;
+            }
+        }
+        footer {
+            background-color: $light-color;
+            @include default-w-h;
+            @include column-order;
+            align-items: center;
+            max-height: 300px;
+            & {
+                @media only screen and(min-width: 930px) {
+                    background-color: $dark-blue-color;
+                }
+            }
+        }
+    }
+}
+

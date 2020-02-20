@@ -1,0 +1,66 @@
+
+
+//  Contact page info card
+.text-article_info-card {
+    @include column-order;
+    align-self: center;
+    margin: 30px 10px;
+    background-color: $transparent-silver-color;
+    padding: 10px;
+    & {
+        @media only screen and (min-width: 600px) {
+            margin: 5% 5%;
+            padding: 25px;
+            max-width: 700px;
+        }
+        @media only screen and (min-width: 930px) {
+            margin: 10% 0 150px 10%;
+            max-width: 800px;
+            padding: 45px;
+            align-self: flex-start;
+        }
+    }
+    .text-article_content {
+        @include default-p-m;
+        & {
+            @media only screen and (min-width: 930px) {
+                font-size: $larger-font-size;
+            }
+        }
+    }
+    .text-article_social-media {
+        .social-media_hyperlink {
+            display: inline-block;
+            margin-top: 20px;
+            &:first-child {
+                margin-right: 16px;
+            }
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+        & {
+            @media only screen and (min-width: 930px) {
+                display: none;
+            }
+        }
+    }
+    .text-article_p-e-box {
+        margin-top: 50px;
+        .text-article_content {
+            color: $golden-color;
+            @include default-p-m;
+            &:first-child::before {
+                content: "Mob: ";
+                display: block;
+                color: rgb(72, 79, 83);
+            }
+            &:last-child::before {
+                content: "Email: ";
+                display: block;
+                margin-top: 15px;
+                color: rgb(72, 79, 83);
+            }
+        }
+    }
+}

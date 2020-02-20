@@ -1,0 +1,104 @@
+
+
+//  Navigation
+.menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 75%;
+    min-width: 200px;
+    max-width: 350px;
+    height: auto;
+    background-color: $transparent-golden-color;
+    z-index: 1;
+    border-top: 1px solid $dark-blue-color;
+    display: none;
+    & {
+        @media only screen and(min-width: 930px) {
+            position: relative;
+            top: 0;
+            max-width: 100%;
+            height: 100%;
+            background-color: none;
+            border-top: none;
+            @include row-order;
+            justify-content: flex-end;
+        }
+    }
+    .menu_close-button {
+        width: 45px;
+        text-align: center;
+        font-size: 2.2rem;
+        color: $dark-blue-color;
+        display: block;
+        margin: auto 0 auto auto;
+        cursor: pointer;
+        & {
+            @media only screen and (min-width: 930px) {
+                display: none;
+            }
+        }
+    }
+    .menu_navigation {
+        list-style: none;
+        & {
+            @media only screen and(min-width: 930px) {
+                align-self: center;
+                margin-right: 40px;
+            }
+        }
+        .menu_li {
+            line-height: $larger-font-size;
+            margin: 30px 0 15px -20px;
+            @include row-order;
+            & {
+                @media only screen and(min-width: 930px) {
+                    display: block;
+                    float: left;
+                    margin: 0 0 0 0 ;
+                }
+            }
+            .menu_hyperlink {
+                display: inline-block;
+                width: 100%;
+                padding: 0 0 0 40px;
+                font-size: $larger-font-size;
+                line-height: $large-font-size;
+                letter-spacing: $default-letter-spacing;
+                color: $dark-blue-color;
+                font-weight: 500;
+                text-decoration: none;
+                & {
+                    @media only screen and(min-width: 930px) {
+                        font-size: $large-font-size;
+                        padding:  10px 25px 10px 25px;
+                        
+                    }
+                }
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .menu_mini-info {
+        margin-top: 30px;
+        padding-right: 5px;
+        .menu_mini-info-p {
+            @include default-p-m;
+            display: block;
+            text-align: right;
+            padding: 2.5px;
+            font-size: 1rem;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+        & {
+            @media only screen and (min-width: 930px){
+                display: none;
+            }
+        }
+    }
+}
