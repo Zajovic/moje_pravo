@@ -91,8 +91,13 @@
             text-align: right;
             padding: 2.5px;
             font-size: 1rem;
+            color: $dark-blue-color;
             &:last-child {
                 margin-bottom: 20px;
+            }
+            a {
+                text-decoration: underline $dark-blue-color;
+                color: $dark-blue-color;
             }
         }
         & {

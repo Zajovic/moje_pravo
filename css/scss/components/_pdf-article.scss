@@ -27,15 +27,27 @@
                 @include row-order;
             }
         } 
-        embed {
+        object {
             height: 350px;
             width: 100%;
-            margin-top: 20px;
+            display: none;
             & {
                 @media only screen and(min-width: 930px){
                     margin: 20px 15px 0 15px;
                     width: 40%;
                     height: 400px;
+                    display: block;
+                }
+            }
+        }
+        .text-article_content {
+            a { 
+                color: $dark-blue-color;
+                text-decoration: none;
+            }
+            & {
+                @media only screen and(min-width: 930px){
+                    display: none;
                 }
             }
         }
