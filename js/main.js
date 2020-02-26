@@ -24,7 +24,6 @@ $(document).ready(function () {
     $("#mail-aside-icon").click(function () {
         $(".modal").attr("style", "display: flex;");
         $(".aside-icons").attr("style", "display: none;");
-        console.log("cao")
     });
 });
 
@@ -48,22 +47,3 @@ $(document).ready(function () {
     });
 });
 
-//   Device/OS test
-$(document).ready(function () {
-    $("#fbLink").click(function () {
-        if (navigator.userAgent.match(/Android/i)
-            || navigator.userAgent.match(/webOS/i)
-            || navigator.userAgent.match(/iPhone/i)
-            || navigator.userAgent.match(/iPad/i)
-            || navigator.userAgent.match(/iPod/i)) {
-
-            window.open("fb://facewebmodal/href=https://www.facebook.com/%D0%9C%D0%BE%D1%98%D0%B5-%D0%9F%D1%80%D0%B0%D0%B2%D0%BE-512058679621909/", "_blank");
-            console.log("1. Link");
-        } else {
-            $("#appLink").click(function () {
-                window.open("href=https://www.facebook.com/%D0%9C%D0%BE%D1%98%D0%B5-%D0%9F%D1%80%D0%B0%D0%B2%D0%BE-512058679621909/", "_blank");
-            });
-            console.log("2. Link")
-        }
-    })
-});
