@@ -11,10 +11,10 @@ $(document).ready(function () {
 //  Display menu on small screen
 $(document).ready(function () {
     $(".hamburger-icon-div").click(function () {
-        $(".menu").animate({ height: 'toggle' }, 400);
+        $(".menu").animate({ height: 'toggle' }, 200);
     });
     $(".menu_close-button").click(function () {
-        $(".menu").animate({ height: 'toggle' }, 400);
+        $(".menu").animate({ height: 'toggle' }, 200);
     });
 });
 
@@ -43,7 +43,7 @@ $("#mail-form").submit(function (e) {
 //  Tuzbe page article slide down
 $(document).ready(function () {
     $(".text-article_subtitle-h2--see-more").click(function () {
-        $(this).siblings("p").slideDown("1000");
+        $(this).siblings("p").slideDown("400");
     });
 });
 
